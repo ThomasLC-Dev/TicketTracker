@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tickets_list"
+        android:title="Tickets"
+        android:icon="@drawable/ic_tickets_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/all_tickets_list"
+        android:title="All Tickets"
+        android:icon="@drawable/ic_all_tickets_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/users_list"
+        android:title="Users"
+        android:icon="@drawable/ic_users_24"
+        app:showAsAction="always"/>
+
+</menu>

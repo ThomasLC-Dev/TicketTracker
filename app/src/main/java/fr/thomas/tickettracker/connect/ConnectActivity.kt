@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import fr.thomas.tickettracker.App
 import fr.thomas.tickettracker.R
+import fr.thomas.tickettracker.database.Database
 import fr.thomas.tickettracker.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_connect.*
 
@@ -44,6 +45,7 @@ class ConnectActivity : AppCompatActivity() {
 
     private fun startHomeActivity(){
         val intent = Intent(this, HomeActivity::class.java)
+        App.user = App.database.getUser(App.mAuth.currentUser!!.uid)
         startActivity(intent)
         finish()
     }

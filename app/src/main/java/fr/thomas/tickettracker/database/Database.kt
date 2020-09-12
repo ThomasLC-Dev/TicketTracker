@@ -1,5 +1,7 @@
 package fr.thomas.tickettracker.database
 
+import fr.thomas.tickettracker.models.User
+
 class Database {
 
     fun createUserProfil(id: String, username: String, role: String){
@@ -9,6 +11,10 @@ class Database {
     //If empty show all roles
     fun getUsers(usersRole: String = "all"){
 
+    }
+
+    fun getUser(userId: String): User{
+        return User("userId", "test@test.fr", "Test user", "admin")
     }
 
     fun createTicket(){
