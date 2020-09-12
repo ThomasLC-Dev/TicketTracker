@@ -10,9 +10,5 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-        btn_sign_out.setOnClickListener {
-            App.mAuth.signOut()
-        }
     }
 }

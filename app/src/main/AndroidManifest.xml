@@ -10,7 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home.HomeActivity"></activity>
+        <activity android:name=".users.NewUserActivity"></activity>
+        <activity android:name=".users.UserDetailsActivity" />
+        <activity android:name=".tickets.TicketDetailsTechActivity" />
+        <activity android:name=".tickets.TicketDetailUserActivity" />
+        <activity android:name=".tickets.TicketDetailsUserActivity" />
+        <activity android:name=".tickets.NewTicketActivity" />
+        <activity android:name=".home.TicketsListActivity" />
+        <activity android:name=".home.HomeActivity" />
         <activity android:name=".connect.ConnectActivity">
             <intent-filter>
                 <action
